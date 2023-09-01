@@ -1,21 +1,24 @@
-var recntsl = new Swiper(".recntsl", {
+var acridtnSl = new Swiper(".acridtnSl", {
     slidesPerView: 3,
     speed: 900,
     loop: true,
-    freeMode: true,
     spaceBetween: 20,
     navigation: {
-      nextEl: ".recntslArr1",
-      prevEl: ".recntslArr2",
+      nextEl: ".acridtnSlArr2",
+      prevEl: ".acridtnSlArr1",
     },
     breakpoints: {
       40: {
         slidesPerView: 1,
-        spaceBetween: 5,
+        spaceBetween: 15,
       },
       540: {
+        slidesPerView: 1,
+        spaceBetween: 15,
+      },
+      768: {
         slidesPerView: 2,
-        spaceBetween: 10,
+        spaceBetween: 15,
       },
       1023: {
         slidesPerView: 3,
@@ -23,57 +26,18 @@ var recntsl = new Swiper(".recntsl", {
       },
     }
 });
-var reviesl = new Swiper(".reviesl", {
-  slidesPerView: 2,
-  speed: 600,
+var reviesl = new Swiper(".testiSl", {
+  slidesPerView: 1,
+  speed: 1000,
   loop: true,
   autoplay: true,
-  spaceBetween: 20,
-  breakpoints: {
-    40: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    1023: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-  }
-});
-var clientsSl = new Swiper(".clientsSl", {
-  slidesPerView: 6,
-  speed: 400,
-  loop: true,
-  autoplay: true,
-  spaceBetween: 50,
+  spaceBetween: 15,
   navigation: {
-    nextEl: ".clientsSlArr2",
-    prevEl: ".clientsSlArr1",
+    nextEl: ".testiSlArr2",
+    prevEl: ".testiSlArr1",
   },
-  breakpoints: {
-    40: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    540: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 6,
-      spaceBetween: 20,
-    },
-    1199: {
-      slidesPerView: 6,
-      spaceBetween: 40,
-    },
-    1600: {
-      slidesPerView: 6,
-      spaceBetween: 50,
-    },
-  }
+  pagination: {
+    el: ".testipagination",
+    clickable:true,
+  },
 });

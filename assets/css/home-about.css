@@ -1,5 +1,5 @@
 .about{
-    padding: 70px 0;
+    padding: 50px 0;
     background-position: bottom right;
     background-size: contain;
     background-repeat: no-repeat;
@@ -65,6 +65,7 @@
     bottom: -120px;
     left: 140px;
     animation: move-left-to-right 4s linear infinite alternate both;
+    box-shadow: 0 3px 15px 0 rgba(0,0,0,0.05);
 }
 @keyframes move-left-to-right{
     0%{
@@ -85,15 +86,15 @@
 .bannerbox2__subh{
     font-size: 1rem;
     letter-spacing: 1px;
-    color: #ff6d2e;
+    color: #f75a5a;
     font-weight: bold;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 .bannerbox2__h{
-    color: #000000;
+    color: #0043a1;
     font-size: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     font-weight: bold;
 }
 .bannerbox2__p{
@@ -104,51 +105,52 @@
     margin-bottom: 20px;
 }
 .bannerbox2__h3{
-    color: #ff6d2e;
-    font-size: 18px;
+    color: var(--main);
+    font-size: 17px;
     font-weight: 600;
     line-height: 1.8;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 .qbox{
     column-gap: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .qboxmini{
     width: 70px;
     height: 70px;
     font-size: 32px;
-    color: #ff6d2e;
+    color: var(--main);
     text-align: center;
-    background-color: #f6f6f6;
+    background-color: #e9f3ff;
 }
 .qbox__h{
-    font-size: 1.1rem;
+    font-size: 18px;
     line-height: 1.67;
     font-weight: 700;
-    color: #726f84;
+    color: #f75a5a;
 }
 .qbox__link{
     font-size: 1.1rem;
-    color: #151515;
+    color: var(--main);
     font-weight: 700;
     letter-spacing: 1px;
 }
 .about__btn{
     position: relative;
     z-index: 0;
-    background-color: #000;
-    color: #fff;
-    font-size: 1rem;
+    background-color: #e9f3ff;
+    color: var(--main);
+    font-size: 16px;
     text-transform: uppercase;
     padding: 15px 40px;
     width: fit-content;
-    border-radius: 5px;
     font-weight: 500;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 .about__btn:hover{
     color: #fff;
+    transition: all 0.3s ease-in-out;
 }
 .about__btn::before{
     content: '';
@@ -178,9 +180,64 @@
     transition: 0.3s cubic-bezier(0.785,0.135,0.15,0.86);
     background-color: var(--main);
 }
+@media(max-width:1599px){
+    .bannerbox2__h {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .bannerbox2__p {
+        font-size: 15px;
+    }
+    .bannerbox2__h3 {
+        font-size: 16px;
+        margin-bottom: 19px;
+    }
+    .qboxmini {
+        width: 65px;
+        height: 65px;
+        font-size: 26px;
+    }
+    .qbox__h{
+        font-size: 16px;
+    }
+    .qbox__link{
+        font-size: 15px;
+    }
+    .qbox{
+        margin-bottom: 30px;
+    }
+    .about__btn {
+        font-size: 15px;
+        padding: 13px 32px;
+    }
+    .bannerbox1__abbox {
+        width: 340px;
+        height: 300px;
+        padding: 15px;
+        bottom: -80px;
+        left: 140px;
+    }
+    .bannerbox1__box1 {
+        width: 515px;
+        height: 550px;
+    }
+    .banner-wrpr-p {
+        font-size: 62px;
+    }
+
+    .values {
+        padding: 60px 0 20px 0;
+    }
+    .values--services{
+        padding-top: 40px;
+    }
+    .values .hmabtBo2 .hmabtBo2__h{
+        margin-bottom: 15px;
+    }
+}
 @media(max-width:1399px){
     .about {
-        padding: 80px 0;
+        padding: 40px 0 10px 0;
     }
     .banner-wrpr{
         max-width: 1020px;
@@ -206,12 +263,9 @@
         }
     }
     .banner-wrpr-p {
-        font-size: 70px;
+        font-size: 50px;
     }
-    .bannerbox2__h {
-        font-size: 38px;
-        margin-bottom: 30px;
-    }
+
     .bannerbox2__subh {
         font-size: 1rem;
         margin-bottom: 10px;
@@ -242,18 +296,19 @@
         }
     }
     .bannerbox2__h {
-        font-size: 32px;
-        margin-bottom: 20px;
+        font-size: 26px;
+        margin-bottom: 15px;
     }
     .bannerbox2__p {
-        font-size: 0.95rem;
-        margin-bottom: 25px;
+        font-size: 15px;
+        margin-bottom: 15px;
     }
     .bannerbox2__h3 {
-        font-size: 19px;
+        font-size: 16px;
     }
     .about__btn {
         padding: 13px 32px;
+        font-size: 14px;
     }
 }
 @media(max-width:1023px){
@@ -266,7 +321,7 @@
         height: 588px;
     }
     .bannerbox1__box1::before{
-        width: 515px;
+        width: 420px;
     }
     .bannerbox2{
         width: 100%;
@@ -275,18 +330,20 @@
         font-size: 28px;
     }
     .bannerbox1__abbox {
-        width: 380px;
-        height: 360px;
+        width: 340px;
+        height: 300px;
         bottom: -125px;
     }
 }
 @media(max-width:767px){
     .bannerbox1__box1{
-        max-width: 480px;
+        max-width: 100%;
+        width: 100%;
         max-height: 540px;
     }
     .bannerbox1__box1::before{
-        max-width: 480px;
+        max-width: 100%;
+        width: 100%;
     }
     .bannerbox1__abbox {
         width: 300px;
@@ -296,10 +353,27 @@
     .bannerbox1{
         margin-bottom: 120px;
     }
+    .bannerbox2__subh {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .bannerbox2__h {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+    .values .row {
+        row-gap: 25px;
+    }
+    .values .hmabtBo2 .hmabtBo2__h {
+        margin-bottom: 5px;
+    }
 }
 @media(max-width:539px){
-    .about {
-        padding: 50px 0;
+    .about{
+        padding-top: 25px;
+    }
+    .values {
+        padding: 20px 0 20px 0;
     }
     .bannerbox1 {
         margin-bottom: 100px;
@@ -326,7 +400,7 @@
         }
     }
     .qbox__h {
-        font-size: 1rem;
+        font-size: 14px;
     }
     .qboxmini {
         width: 60px;

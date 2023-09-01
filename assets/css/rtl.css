@@ -35,3 +35,22 @@
     left: auto;
     right: 0;
 }
+.rtl .page i,
+.rtl .acridtn .acridtnSl .acridtnSlArr i{
+    transform: scaleX(-1);
+}
+.rtl .testi .testiSl .testiSlArr1{
+    right: auto;
+    left: 0;
+}
+.rtl .breadcrumb-item+.breadcrumb-item::before {
+    float: right;
+    padding-right: var(--bs-breadcrumb-item-padding-x);
+    color: var(--bs-breadcrumb-divider-color);
+    content: var(--bs-breadcrumb-divider, "/");
+    padding-left: var(--bs-breadcrumb-item-padding-x);
+}
+.rtl .breadcrumb-item+.breadcrumb-item {
+    padding-left: var(--bs-breadcrumb-item-padding-x);
+    padding-right: var(--bs-breadcrumb-item-padding-x);
+}

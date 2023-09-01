@@ -67,12 +67,24 @@
     animation: move-left-to-right 4s linear infinite alternate both;
     box-shadow: 0 3px 15px 0 rgba(0,0,0,0.05);
 }
+
 @keyframes move-left-to-right{
     0%{
         left: 140px; 
     }
     100%{
         left: 200px; 
+    }
+}
+.rtl .bannerbox1__abbox{
+    animation: move1-left-to-right 4s linear infinite alternate both;
+}
+@keyframes move1-left-to-right{
+    0%{
+        right: 140px; 
+    }
+    100%{
+        right: 200px; 
     }
 }
 .bannerbox1__abbox img{
@@ -262,6 +274,14 @@
             left: 150px; 
         }
     }
+    @keyframes move1-left-to-right{
+        0%{
+            right: 80px; 
+        }
+        100%{
+            right: 150px; 
+        }
+    }
     .banner-wrpr-p {
         font-size: 50px;
     }
@@ -293,6 +313,14 @@
         }
         100%{
             left: 120px; 
+        }
+    }
+    @keyframes move1-left-to-right{
+        0%{
+            right: 80px; 
+        }
+        100%{
+            right: 120px; 
         }
     }
     .bannerbox2__h {
@@ -397,6 +425,14 @@
         }
         100%{
             left: 90px; 
+        }
+    }
+    @keyframes move1-left-to-right{
+        0%{
+            right: 20px; 
+        }
+        100%{
+            right: 90px; 
         }
     }
     .qbox__h {

@@ -1,4 +1,81 @@
 .mblLst{
+    .langbox{
+        display: flex;
+        align-items: center;
+        .langboxmini{
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            cursor: pointer;
+            display: none;
+            font-weight: normal;
+            min-width: max-content;
+            padding: 3px 12px;
+            color: var(--main);
+            transition: all 0.3s ease-in-out;
+            border: 1px solid var(--main);
+            @media (max-width: 1023px) {
+                & {
+                    padding: 3px 7px;
+                    column-gap: 5px;
+                }
+            }
+            @media (max-width: 767px) {
+                & {
+                    padding: 3px 6px;
+                }
+            }
+            @media (max-width: 539px) {
+                & {
+                    column-gap: 5px;
+                }
+            }
+            i{
+                font-size: 16px;
+                @media (max-width: 1799px) {
+                    & {
+                        font-size: 16px;
+                    }
+                }
+                @media (max-width: 1399px) {
+                    & {
+                        font-size: 14px;
+                    }
+                }
+                @media (max-width: 767px) {
+                    & {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .langboxmini__p{
+                font-size: 16px;
+                font-weight: 500;
+                @media (max-width: 1799px) {
+                    & {
+                        font-size: 16px;
+                    }
+                }
+                @media (max-width: 1399px) {
+                    & {
+                        font-size: 14px;
+                    }
+                }
+                @media (max-width: 767px) {
+                    & {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        // langbox end
+        .langboxmini.en{
+            display: none;
+        }
+        .langboxmini.active{
+            display: flex;
+        }
+    }
     position: fixed;
     height: 100vh;
     width: 320px;
